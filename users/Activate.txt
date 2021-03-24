@@ -1,0 +1,7 @@
+<p>
+Important: Please Reply:
+Avail = Available to deploy
+Later = Ready later today
+No    = Not available today
+
+Please contact your EEE team lead by pre-determined methods for futher information regarding this activation request.</p>
