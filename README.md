@@ -1,2 +1,0 @@
-# EEE
-ERAU Collaboration Project
