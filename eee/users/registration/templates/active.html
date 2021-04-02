@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{%block content%}
+{% if user.is_authenticated%}
+    Hello {{user.username}}
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+    </form>
+    {% if user.is_available%}
+        Thank you for indicating your availability! We will be in touch shortly.
+    {%else%}
+        Thank you for indicating you are busy. Let us know if anything changes!
+    {%endif%}
+{%else%}
+    <p>You are not logged in</p>
+{%endif%}
+{%endblock%}
